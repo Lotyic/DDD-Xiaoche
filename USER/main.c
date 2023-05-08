@@ -41,19 +41,13 @@ int main(void)
 	
 	read_from_flash();		  //从flash中读取数据							
 	LCD_CLS();
-//TIM_Cmd(TIM6, ENABLE);
-//bb12 = 380;
-//bb13 = 520;
-//bb14 = 280;
-//bb12 = 250;
-//bb13 = 430;
-////bb14 = 200;
 
 //printf("%s","TLCDB!");
 //		zuodongzuo(100, 1);
 	delay_ms(10);
 	printf("%s\r\n","TLCDB!");	//实验室精灵唐林吃个大便就能解决双车蓝牙通信问题
 	delay_ms(10);
+	angle_cs=angle_6;
 	while (1)
 	{		
 		// sprintf(OLED_BUF,"%d 	",ADKey_Deal(Get_Key_Adc_Average(ADC_Channel_4,1)));//显示

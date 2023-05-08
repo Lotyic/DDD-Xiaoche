@@ -137,8 +137,8 @@ u16 Get_Key_Adc_Average(u8 ch,u8 times)
 u8 ADKey_Deal(u16 ADKey_Value)
 {
 //	
-//	sprintf(OLED_BUF,"%d   ",ADKey_Value/10);
-//	LCD_16_HanZi_ASCII(0,0,OLED_BUF);
+	// sprintf(OLED_BUF,"%d   ",ADKey_Value/10);
+	// LCD_16_HanZi_ASCII(0,0,OLED_BUF);
 	
 //	u16 adcx;
 

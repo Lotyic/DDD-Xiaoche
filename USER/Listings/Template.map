@@ -2170,25 +2170,25 @@ Image Symbol Table
     Encoder_Least                            0x20000c98   Data           4  moto.o(.data)
     Encoder                                  0x20000c9c   Data           4  moto.o(.data)
     .data                                    0x20000ca0   Section      334  move.o(.data)
-    .data                                    0x20000df0   Section     7339  ui.o(.data)
-    a                                        0x20002a99   Data           1  ui.o(.data)
-    dj                                       0x20002a9a   Data           1  ui.o(.data)
-    .data                                    0x20002a9c   Section      160  exti.o(.data)
-    .bss                                     0x20002b3c   Section      600  usart.o(.bss)
-    .bss                                     0x20002d94   Section      352  oled.o(.bss)
-    .bss                                     0x20002ef4   Section     2148  oled2.o(.bss)
-    .bss                                     0x20003758   Section       12  adc_config.o(.bss)
-    .bss                                     0x20003764   Section       32  st178.o(.bss)
-    .bss                                     0x20003784   Section      172  moto.o(.bss)
-    .bss                                     0x20003830   Section     2785  move.o(.bss)
-    .bss                                     0x20004312   Section       34  ui.o(.bss)
-    .bss                                     0x20004334   Section     2048  stmflash.o(.bss)
-    .bss                                     0x20004b34   Section       96  libspace.o(.bss)
-    HEAP                                     0x20004b98   Section      512  startup_stm32f10x_hd.o(HEAP)
-    Heap_Mem                                 0x20004b98   Data         512  startup_stm32f10x_hd.o(HEAP)
-    STACK                                    0x20004d98   Section     1024  startup_stm32f10x_hd.o(STACK)
-    Stack_Mem                                0x20004d98   Data        1024  startup_stm32f10x_hd.o(STACK)
-    __initial_sp                             0x20005198   Data           0  startup_stm32f10x_hd.o(STACK)
+    .data                                    0x20000df0   Section     7367  ui.o(.data)
+    a                                        0x20002ab5   Data           1  ui.o(.data)
+    dj                                       0x20002ab6   Data           1  ui.o(.data)
+    .data                                    0x20002ab8   Section      160  exti.o(.data)
+    .bss                                     0x20002b58   Section      600  usart.o(.bss)
+    .bss                                     0x20002db0   Section      352  oled.o(.bss)
+    .bss                                     0x20002f10   Section     2148  oled2.o(.bss)
+    .bss                                     0x20003774   Section       12  adc_config.o(.bss)
+    .bss                                     0x20003780   Section       32  st178.o(.bss)
+    .bss                                     0x200037a0   Section      172  moto.o(.bss)
+    .bss                                     0x2000384c   Section     2785  move.o(.bss)
+    .bss                                     0x2000432e   Section       34  ui.o(.bss)
+    .bss                                     0x20004350   Section     2048  stmflash.o(.bss)
+    .bss                                     0x20004b50   Section       96  libspace.o(.bss)
+    HEAP                                     0x20004bb0   Section      512  startup_stm32f10x_hd.o(HEAP)
+    Heap_Mem                                 0x20004bb0   Data         512  startup_stm32f10x_hd.o(HEAP)
+    STACK                                    0x20004db0   Section     1024  startup_stm32f10x_hd.o(STACK)
+    Stack_Mem                                0x20004db0   Data        1024  startup_stm32f10x_hd.o(STACK)
+    __initial_sp                             0x200051b0   Data           0  startup_stm32f10x_hd.o(STACK)
 
     Global Symbols
 
@@ -2754,150 +2754,150 @@ Image Symbol Table
     oo11                                     0x20000fd0   Data         230  ui.o(.data)
     oo12                                     0x200010b6   Data         235  ui.o(.data)
     oo13                                     0x200011a1   Data          30  ui.o(.data)
-    oo14                                     0x200011bf   Data           5  ui.o(.data)
-    oo15                                     0x200011c4   Data           5  ui.o(.data)
-    oo16                                     0x200011c9   Data           5  ui.o(.data)
-    zz11                                     0x200011ce   Data          75  ui.o(.data)
-    zz12                                     0x20001219   Data          65  ui.o(.data)
-    zz13                                     0x2000125a   Data          60  ui.o(.data)
-    zz14                                     0x20001296   Data         110  ui.o(.data)
-    zz15                                     0x20001304   Data         115  ui.o(.data)
-    zz16                                     0x20001377   Data          80  ui.o(.data)
-    ss11                                     0x200013c7   Data         100  ui.o(.data)
-    ss12                                     0x2000142b   Data         115  ui.o(.data)
-    ss13                                     0x2000149e   Data           5  ui.o(.data)
-    ss14                                     0x200014a3   Data           5  ui.o(.data)
-    ss15                                     0x200014a8   Data           5  ui.o(.data)
-    ss16                                     0x200014ad   Data           5  ui.o(.data)
-    xx11                                     0x200014b2   Data         100  ui.o(.data)
-    xx12                                     0x20001516   Data         115  ui.o(.data)
-    xx13                                     0x20001589   Data           5  ui.o(.data)
-    xx14                                     0x2000158e   Data           5  ui.o(.data)
-    xx15                                     0x20001593   Data           5  ui.o(.data)
-    xx16                                     0x20001598   Data          75  ui.o(.data)
-    yy21                                     0x200015e3   Data         110  ui.o(.data)
-    yy22                                     0x20001651   Data          70  ui.o(.data)
-    yy23                                     0x20001697   Data          70  ui.o(.data)
-    yy24                                     0x200016dd   Data          70  ui.o(.data)
-    yy25                                     0x20001723   Data           5  ui.o(.data)
-    yy26                                     0x20001728   Data           5  ui.o(.data)
-    oo21                                     0x2000172d   Data           5  ui.o(.data)
-    oo22                                     0x20001732   Data          30  ui.o(.data)
-    oo23                                     0x20001750   Data          40  ui.o(.data)
-    oo24                                     0x20001778   Data          40  ui.o(.data)
-    oo25                                     0x200017a0   Data          80  ui.o(.data)
-    oo26                                     0x200017f0   Data          80  ui.o(.data)
-    zz21                                     0x20001840   Data         110  ui.o(.data)
-    zz22                                     0x200018ae   Data         100  ui.o(.data)
-    zz23                                     0x20001912   Data          90  ui.o(.data)
-    zz24                                     0x2000196c   Data         130  ui.o(.data)
-    zz25                                     0x200019ee   Data         110  ui.o(.data)
-    zz26                                     0x20001a5c   Data          90  ui.o(.data)
-    ss21                                     0x20001ab6   Data         110  ui.o(.data)
-    ss22                                     0x20001b24   Data          85  ui.o(.data)
-    ss23                                     0x20001b79   Data          90  ui.o(.data)
-    ss24                                     0x20001bd3   Data           5  ui.o(.data)
-    ss25                                     0x20001bd8   Data         140  ui.o(.data)
-    ss26                                     0x20001c64   Data          95  ui.o(.data)
-    xx21                                     0x20001cc3   Data         110  ui.o(.data)
-    xx22                                     0x20001d31   Data           5  ui.o(.data)
-    xx23                                     0x20001d36   Data           5  ui.o(.data)
-    xx24                                     0x20001d3b   Data           5  ui.o(.data)
-    xx25                                     0x20001d40   Data         115  ui.o(.data)
-    xx26                                     0x20001db3   Data           5  ui.o(.data)
-    yy31                                     0x20001db8   Data         140  ui.o(.data)
-    yy32                                     0x20001e44   Data         125  ui.o(.data)
-    yy33                                     0x20001ec1   Data         125  ui.o(.data)
-    yy34                                     0x20001f3e   Data         105  ui.o(.data)
-    yy35                                     0x20001fa7   Data         110  ui.o(.data)
-    yy36                                     0x20002015   Data         140  ui.o(.data)
-    oo31                                     0x200020a1   Data         110  ui.o(.data)
-    oo32                                     0x2000210f   Data         110  ui.o(.data)
-    oo33                                     0x2000217d   Data         130  ui.o(.data)
-    oo34                                     0x200021ff   Data          75  ui.o(.data)
-    oo35                                     0x2000224a   Data          90  ui.o(.data)
-    oo36                                     0x200022a4   Data          95  ui.o(.data)
-    zz31                                     0x20002303   Data         140  ui.o(.data)
-    zz32                                     0x2000238f   Data         120  ui.o(.data)
-    zz33                                     0x20002407   Data         120  ui.o(.data)
-    zz34                                     0x2000247f   Data          65  ui.o(.data)
-    zz35                                     0x200024c0   Data         140  ui.o(.data)
-    zz36                                     0x2000254c   Data          65  ui.o(.data)
-    ss31                                     0x2000258d   Data         140  ui.o(.data)
-    ss32                                     0x20002619   Data          60  ui.o(.data)
-    ss33                                     0x20002655   Data          35  ui.o(.data)
-    ss34                                     0x20002678   Data          55  ui.o(.data)
-    ss35                                     0x200026af   Data         145  ui.o(.data)
-    ss36                                     0x20002740   Data          70  ui.o(.data)
-    xx31                                     0x20002786   Data         140  ui.o(.data)
-    xx32                                     0x20002812   Data           5  ui.o(.data)
-    xx33                                     0x20002817   Data           5  ui.o(.data)
-    xx34                                     0x2000281c   Data           5  ui.o(.data)
-    xx35                                     0x20002821   Data          70  ui.o(.data)
-    xx36                                     0x20002867   Data          70  ui.o(.data)
-    move_flag                                0x200028ad   Data           1  ui.o(.data)
-    move_flag1                               0x200028ae   Data           1  ui.o(.data)
-    move_flag2                               0x200028af   Data           1  ui.o(.data)
-    move_flag3                               0x200028b0   Data           1  ui.o(.data)
-    KeyFuncIndex                             0x200028b1   Data           1  ui.o(.data)
-    KeyFuncPtr                               0x200028b4   Data           4  ui.o(.data)
-    KeyTab                                   0x200028b8   Data         480  ui.o(.data)
-    k_c                                      0x20002a98   Data           1  ui.o(.data)
-    cunchu                                   0x20002a9c   Data           4  exti.o(.data)
-    z_cha                                    0x20002aa0   Data           1  exti.o(.data)
-    y_cha                                    0x20002aa1   Data           1  exti.o(.data)
-    q_cha                                    0x20002aa2   Data           1  exti.o(.data)
-    h_cha                                    0x20002aa3   Data           1  exti.o(.data)
-    count_fz                                 0x20002aa4   Data           2  exti.o(.data)
-    fz_flag                                  0x20002aa6   Data           1  exti.o(.data)
-    bb12                                     0x20002aa8   Data           2  exti.o(.data)
-    bb13                                     0x20002aaa   Data           2  exti.o(.data)
-    bb14                                     0x20002aac   Data           2  exti.o(.data)
-    b12                                      0x20002aae   Data           2  exti.o(.data)
-    b13                                      0x20002ab0   Data           2  exti.o(.data)
-    b14                                      0x20002ab2   Data           2  exti.o(.data)
-    dongzuo                                  0x20002ab4   Data         108  exti.o(.data)
-    dongshuzu                                0x20002b20   Data          28  exti.o(.data)
-    USART1_RX_BUF                            0x20002b3c   Data         200  usart.o(.bss)
-    USART2_RX_BUF                            0x20002c04   Data         200  usart.o(.bss)
-    USART3_RX_BUF                            0x20002ccc   Data         200  usart.o(.bss)
-    write                                    0x20002d94   Data         288  oled.o(.bss)
-    OLED_BUF                                 0x20002eb4   Data          64  oled.o(.bss)
-    OLED2_BUF                                0x20002ef4   Data         100  oled2.o(.bss)
-    OLED_GRAM                                0x20002f58   Data        1024  oled2.o(.bss)
-    OLED_BCK_GRAM                            0x20003358   Data        1024  oled2.o(.bss)
-    ADC_DMA_ConvertedValue                   0x20003758   Data          12  adc_config.o(.bss)
-    shu_q                                    0x20003764   Data          16  st178.o(.bss)
-    shu_h                                    0x20003774   Data          16  st178.o(.bss)
-    Pid_fl                                   0x20003784   Data          40  moto.o(.bss)
-    Pid_fr                                   0x200037ac   Data          40  moto.o(.bss)
-    Pid_br                                   0x200037d4   Data          40  moto.o(.bss)
-    Pid_bl                                   0x200037fc   Data          40  moto.o(.bss)
-    a_pwm                                    0x20003824   Data          12  moto.o(.bss)
-    move_BUFF_SET                            0x20003830   Data          30  move.o(.bss)
-    move_BUFF_SET2                           0x2000384e   Data          30  move.o(.bss)
-    move_BUFF_SET3                           0x2000386c   Data          30  move.o(.bss)
-    chu_3                                    0x2000388a   Data          66  move.o(.bss)
-    chu_4                                    0x200038cc   Data          77  move.o(.bss)
-    chu_5                                    0x20003919   Data          33  move.o(.bss)
-    sb                                       0x2000393a   Data          44  move.o(.bss)
-    zou_1                                    0x20003966   Data         242  move.o(.bss)
-    zou_2                                    0x20003a58   Data         198  move.o(.bss)
-    zou_3                                    0x20003b1e   Data         110  move.o(.bss)
-    fa_1                                     0x20003b8c   Data         297  move.o(.bss)
-    fa_2                                     0x20003cb5   Data         330  move.o(.bss)
-    fa_3                                     0x20003dff   Data         132  move.o(.bss)
-    fangfa                                   0x20003e83   Data         154  move.o(.bss)
-    fangfa_1                                 0x20003f1d   Data         143  move.o(.bss)
-    fangfa_2                                 0x20003fac   Data          33  move.o(.bss)
-    fangfa_3                                 0x20003fcd   Data         187  move.o(.bss)
-    wujie                                    0x20004088   Data         132  move.o(.bss)
-    tou                                      0x2000410c   Data         231  move.o(.bss)
-    LUXIAN1                                  0x200041f3   Data         286  move.o(.bss)
-    Speed_buffer                             0x20004312   Data          34  ui.o(.bss)
-    STMFLASH_BUF                             0x20004334   Data        2048  stmflash.o(.bss)
-    __libspace_start                         0x20004b34   Data          96  libspace.o(.bss)
-    __temporary_stack_top$libspace           0x20004b94   Data           0  libspace.o(.bss)
+    oo14                                     0x200011bf   Data          35  ui.o(.data)
+    oo15                                     0x200011e2   Data           5  ui.o(.data)
+    oo16                                     0x200011e7   Data           5  ui.o(.data)
+    zz11                                     0x200011ec   Data          75  ui.o(.data)
+    zz12                                     0x20001237   Data          65  ui.o(.data)
+    zz13                                     0x20001278   Data          60  ui.o(.data)
+    zz14                                     0x200012b4   Data         110  ui.o(.data)
+    zz15                                     0x20001322   Data         115  ui.o(.data)
+    zz16                                     0x20001395   Data          80  ui.o(.data)
+    ss11                                     0x200013e5   Data         100  ui.o(.data)
+    ss12                                     0x20001449   Data         115  ui.o(.data)
+    ss13                                     0x200014bc   Data           5  ui.o(.data)
+    ss14                                     0x200014c1   Data           5  ui.o(.data)
+    ss15                                     0x200014c6   Data           5  ui.o(.data)
+    ss16                                     0x200014cb   Data           5  ui.o(.data)
+    xx11                                     0x200014d0   Data         100  ui.o(.data)
+    xx12                                     0x20001534   Data         115  ui.o(.data)
+    xx13                                     0x200015a7   Data           5  ui.o(.data)
+    xx14                                     0x200015ac   Data           5  ui.o(.data)
+    xx15                                     0x200015b1   Data           5  ui.o(.data)
+    xx16                                     0x200015b6   Data          75  ui.o(.data)
+    yy21                                     0x20001601   Data         110  ui.o(.data)
+    yy22                                     0x2000166f   Data          70  ui.o(.data)
+    yy23                                     0x200016b5   Data          70  ui.o(.data)
+    yy24                                     0x200016fb   Data          70  ui.o(.data)
+    yy25                                     0x20001741   Data           5  ui.o(.data)
+    yy26                                     0x20001746   Data           5  ui.o(.data)
+    oo21                                     0x2000174b   Data           5  ui.o(.data)
+    oo22                                     0x20001750   Data          30  ui.o(.data)
+    oo23                                     0x2000176e   Data          40  ui.o(.data)
+    oo24                                     0x20001796   Data          40  ui.o(.data)
+    oo25                                     0x200017be   Data          80  ui.o(.data)
+    oo26                                     0x2000180e   Data          80  ui.o(.data)
+    zz21                                     0x2000185e   Data         110  ui.o(.data)
+    zz22                                     0x200018cc   Data         100  ui.o(.data)
+    zz23                                     0x20001930   Data          90  ui.o(.data)
+    zz24                                     0x2000198a   Data         130  ui.o(.data)
+    zz25                                     0x20001a0c   Data         110  ui.o(.data)
+    zz26                                     0x20001a7a   Data          90  ui.o(.data)
+    ss21                                     0x20001ad4   Data         110  ui.o(.data)
+    ss22                                     0x20001b42   Data          85  ui.o(.data)
+    ss23                                     0x20001b97   Data          90  ui.o(.data)
+    ss24                                     0x20001bf1   Data           5  ui.o(.data)
+    ss25                                     0x20001bf6   Data         140  ui.o(.data)
+    ss26                                     0x20001c82   Data          95  ui.o(.data)
+    xx21                                     0x20001ce1   Data         110  ui.o(.data)
+    xx22                                     0x20001d4f   Data           5  ui.o(.data)
+    xx23                                     0x20001d54   Data           5  ui.o(.data)
+    xx24                                     0x20001d59   Data           5  ui.o(.data)
+    xx25                                     0x20001d5e   Data         115  ui.o(.data)
+    xx26                                     0x20001dd1   Data           5  ui.o(.data)
+    yy31                                     0x20001dd6   Data         140  ui.o(.data)
+    yy32                                     0x20001e62   Data         125  ui.o(.data)
+    yy33                                     0x20001edf   Data         125  ui.o(.data)
+    yy34                                     0x20001f5c   Data         105  ui.o(.data)
+    yy35                                     0x20001fc5   Data         110  ui.o(.data)
+    yy36                                     0x20002033   Data         140  ui.o(.data)
+    oo31                                     0x200020bf   Data         110  ui.o(.data)
+    oo32                                     0x2000212d   Data         110  ui.o(.data)
+    oo33                                     0x2000219b   Data         130  ui.o(.data)
+    oo34                                     0x2000221d   Data          75  ui.o(.data)
+    oo35                                     0x20002268   Data          90  ui.o(.data)
+    oo36                                     0x200022c2   Data          95  ui.o(.data)
+    zz31                                     0x20002321   Data         140  ui.o(.data)
+    zz32                                     0x200023ad   Data         120  ui.o(.data)
+    zz33                                     0x20002425   Data         120  ui.o(.data)
+    zz34                                     0x2000249d   Data          65  ui.o(.data)
+    zz35                                     0x200024de   Data         140  ui.o(.data)
+    zz36                                     0x2000256a   Data          65  ui.o(.data)
+    ss31                                     0x200025ab   Data         140  ui.o(.data)
+    ss32                                     0x20002637   Data          60  ui.o(.data)
+    ss33                                     0x20002673   Data          35  ui.o(.data)
+    ss34                                     0x20002696   Data          55  ui.o(.data)
+    ss35                                     0x200026cd   Data         145  ui.o(.data)
+    ss36                                     0x2000275e   Data          70  ui.o(.data)
+    xx31                                     0x200027a4   Data         140  ui.o(.data)
+    xx32                                     0x20002830   Data           5  ui.o(.data)
+    xx33                                     0x20002835   Data           5  ui.o(.data)
+    xx34                                     0x2000283a   Data           5  ui.o(.data)
+    xx35                                     0x2000283f   Data          70  ui.o(.data)
+    xx36                                     0x20002885   Data          70  ui.o(.data)
+    move_flag                                0x200028cb   Data           1  ui.o(.data)
+    move_flag1                               0x200028cc   Data           1  ui.o(.data)
+    move_flag2                               0x200028cd   Data           1  ui.o(.data)
+    move_flag3                               0x200028ce   Data           1  ui.o(.data)
+    KeyFuncIndex                             0x200028cf   Data           1  ui.o(.data)
+    KeyFuncPtr                               0x200028d0   Data           4  ui.o(.data)
+    KeyTab                                   0x200028d4   Data         480  ui.o(.data)
+    k_c                                      0x20002ab4   Data           1  ui.o(.data)
+    cunchu                                   0x20002ab8   Data           4  exti.o(.data)
+    z_cha                                    0x20002abc   Data           1  exti.o(.data)
+    y_cha                                    0x20002abd   Data           1  exti.o(.data)
+    q_cha                                    0x20002abe   Data           1  exti.o(.data)
+    h_cha                                    0x20002abf   Data           1  exti.o(.data)
+    count_fz                                 0x20002ac0   Data           2  exti.o(.data)
+    fz_flag                                  0x20002ac2   Data           1  exti.o(.data)
+    bb12                                     0x20002ac4   Data           2  exti.o(.data)
+    bb13                                     0x20002ac6   Data           2  exti.o(.data)
+    bb14                                     0x20002ac8   Data           2  exti.o(.data)
+    b12                                      0x20002aca   Data           2  exti.o(.data)
+    b13                                      0x20002acc   Data           2  exti.o(.data)
+    b14                                      0x20002ace   Data           2  exti.o(.data)
+    dongzuo                                  0x20002ad0   Data         108  exti.o(.data)
+    dongshuzu                                0x20002b3c   Data          28  exti.o(.data)
+    USART1_RX_BUF                            0x20002b58   Data         200  usart.o(.bss)
+    USART2_RX_BUF                            0x20002c20   Data         200  usart.o(.bss)
+    USART3_RX_BUF                            0x20002ce8   Data         200  usart.o(.bss)
+    write                                    0x20002db0   Data         288  oled.o(.bss)
+    OLED_BUF                                 0x20002ed0   Data          64  oled.o(.bss)
+    OLED2_BUF                                0x20002f10   Data         100  oled2.o(.bss)
+    OLED_GRAM                                0x20002f74   Data        1024  oled2.o(.bss)
+    OLED_BCK_GRAM                            0x20003374   Data        1024  oled2.o(.bss)
+    ADC_DMA_ConvertedValue                   0x20003774   Data          12  adc_config.o(.bss)
+    shu_q                                    0x20003780   Data          16  st178.o(.bss)
+    shu_h                                    0x20003790   Data          16  st178.o(.bss)
+    Pid_fl                                   0x200037a0   Data          40  moto.o(.bss)
+    Pid_fr                                   0x200037c8   Data          40  moto.o(.bss)
+    Pid_br                                   0x200037f0   Data          40  moto.o(.bss)
+    Pid_bl                                   0x20003818   Data          40  moto.o(.bss)
+    a_pwm                                    0x20003840   Data          12  moto.o(.bss)
+    move_BUFF_SET                            0x2000384c   Data          30  move.o(.bss)
+    move_BUFF_SET2                           0x2000386a   Data          30  move.o(.bss)
+    move_BUFF_SET3                           0x20003888   Data          30  move.o(.bss)
+    chu_3                                    0x200038a6   Data          66  move.o(.bss)
+    chu_4                                    0x200038e8   Data          77  move.o(.bss)
+    chu_5                                    0x20003935   Data          33  move.o(.bss)
+    sb                                       0x20003956   Data          44  move.o(.bss)
+    zou_1                                    0x20003982   Data         242  move.o(.bss)
+    zou_2                                    0x20003a74   Data         198  move.o(.bss)
+    zou_3                                    0x20003b3a   Data         110  move.o(.bss)
+    fa_1                                     0x20003ba8   Data         297  move.o(.bss)
+    fa_2                                     0x20003cd1   Data         330  move.o(.bss)
+    fa_3                                     0x20003e1b   Data         132  move.o(.bss)
+    fangfa                                   0x20003e9f   Data         154  move.o(.bss)
+    fangfa_1                                 0x20003f39   Data         143  move.o(.bss)
+    fangfa_2                                 0x20003fc8   Data          33  move.o(.bss)
+    fangfa_3                                 0x20003fe9   Data         187  move.o(.bss)
+    wujie                                    0x200040a4   Data         132  move.o(.bss)
+    tou                                      0x20004128   Data         231  move.o(.bss)
+    LUXIAN1                                  0x2000420f   Data         286  move.o(.bss)
+    Speed_buffer                             0x2000432e   Data          34  ui.o(.bss)
+    STMFLASH_BUF                             0x20004350   Data        2048  stmflash.o(.bss)
+    __libspace_start                         0x20004b50   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x20004bb0   Data           0  libspace.o(.bss)
 
 
 
@@ -2907,7 +2907,7 @@ Memory Map of the image
 
   Image Entry point : 0x08000229
 
-  Load Region LR_1 (Base: 0x08000000, Size: 0x00015a0c, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x00013a24])
+  Load Region LR_1 (Base: 0x08000000, Size: 0x00015a28, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x00013a2c])
 
     Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00012ed0, Max: 0xffffffff, ABSOLUTE)
 
@@ -3253,7 +3253,7 @@ Memory Map of the image
     0x08012eb0   0x08012eb0   0x00000020   Data   RO         5063    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08012ed0, Size: 0x00002b3c, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x00000b54])
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08012ed0, Size: 0x00002b58, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x00000b5c])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -3269,29 +3269,28 @@ Memory Map of the image
     0x20000c2c   COMPRESSED   0x00000074   Data   RW         4119    .data               moto.o
     0x20000ca0   COMPRESSED   0x0000014e   Data   RW         4229    .data               move.o
     0x20000dee   COMPRESSED   0x00000002   PAD
-    0x20000df0   COMPRESSED   0x00001cab   Data   RW         4419    .data               ui.o
-    0x20002a9b   COMPRESSED   0x00000001   PAD
-    0x20002a9c   COMPRESSED   0x000000a0   Data   RW         4674    .data               exti.o
+    0x20000df0   COMPRESSED   0x00001cc7   Data   RW         4419    .data               ui.o
+    0x20002ab7   COMPRESSED   0x00000001   PAD
+    0x20002ab8   COMPRESSED   0x000000a0   Data   RW         4674    .data               exti.o
 
 
-    Execution Region ER_ZI (Exec base: 0x20002b3c, Load base: 0x08013a24, Size: 0x0000265c, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x20002b58, Load base: 0x08013a2c, Size: 0x00002658, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20002b3c        -       0x00000258   Zero   RW          452    .bss                usart.o
-    0x20002d94        -       0x00000160   Zero   RW         3662    .bss                oled.o
-    0x20002ef4        -       0x00000864   Zero   RW         3845    .bss                oled2.o
-    0x20003758        -       0x0000000c   Zero   RW         4020    .bss                adc_config.o
-    0x20003764        -       0x00000020   Zero   RW         4076    .bss                st178.o
-    0x20003784        -       0x000000ac   Zero   RW         4118    .bss                moto.o
-    0x20003830        -       0x00000ae1   Zero   RW         4228    .bss                move.o
-    0x20004311   0x08013a24   0x00000001   PAD
-    0x20004312        -       0x00000022   Zero   RW         4418    .bss                ui.o
-    0x20004334        -       0x00000800   Zero   RW         4632    .bss                stmflash.o
-    0x20004b34        -       0x00000060   Zero   RW         4925    .bss                c_w.l(libspace.o)
-    0x20004b94   0x08013a24   0x00000004   PAD
-    0x20004b98        -       0x00000200   Zero   RW          661    HEAP                startup_stm32f10x_hd.o
-    0x20004d98        -       0x00000400   Zero   RW          660    STACK               startup_stm32f10x_hd.o
+    0x20002b58        -       0x00000258   Zero   RW          452    .bss                usart.o
+    0x20002db0        -       0x00000160   Zero   RW         3662    .bss                oled.o
+    0x20002f10        -       0x00000864   Zero   RW         3845    .bss                oled2.o
+    0x20003774        -       0x0000000c   Zero   RW         4020    .bss                adc_config.o
+    0x20003780        -       0x00000020   Zero   RW         4076    .bss                st178.o
+    0x200037a0        -       0x000000ac   Zero   RW         4118    .bss                moto.o
+    0x2000384c        -       0x00000ae1   Zero   RW         4228    .bss                move.o
+    0x2000432d   0x08013a2c   0x00000001   PAD
+    0x2000432e        -       0x00000022   Zero   RW         4418    .bss                ui.o
+    0x20004350        -       0x00000800   Zero   RW         4632    .bss                stmflash.o
+    0x20004b50        -       0x00000060   Zero   RW         4925    .bss                c_w.l(libspace.o)
+    0x20004bb0        -       0x00000200   Zero   RW          661    HEAP                startup_stm32f10x_hd.o
+    0x20004db0        -       0x00000400   Zero   RW          660    STACK               startup_stm32f10x_hd.o
 
 
 ==============================================================================
@@ -3325,11 +3324,11 @@ Image component sizes
          0          0          0          0          0         32   sys.o
        328         28          0         20          0       2257   system_stm32f10x.o
       1076         52          0          0          0       2555   timer.o
-     24972       2440          0       7339         34      31762   ui.o
+     24972       2440          0       7367         34      31762   ui.o
       1152        114          0         25        600     226814   usart.o
 
     ----------------------------------------------------------------------
-     48674       4244      20046      11068       9720     916451   Object Totals
+     48674       4244      20046      11096       9720     916451   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         28          0          7          6          1          0   (incl. Padding)
 
@@ -3410,8 +3409,8 @@ Image component sizes
         76          0          0          0          0         84   sqrt.o
 
     ----------------------------------------------------------------------
-      8656        528        144          0        100       5448   Library Totals
-        26          0          0          0          4          0   (incl. Padding)
+      8656        528        144          0         96       5448   Library Totals
+        26          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -3422,7 +3421,7 @@ Image component sizes
       2868        200        144          0          0        912   m_ws.l
 
     ----------------------------------------------------------------------
-      8656        528        144          0        100       5448   Library Totals
+      8656        528        144          0         96       5448   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -3431,15 +3430,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     57330       4772      20190      11068       9820     909259   Grand Totals
-     57330       4772      20190       2900       9820     909259   ELF Image Totals (compressed)
-     57330       4772      20190       2900          0          0   ROM Totals
+     57330       4772      20190      11096       9816     909259   Grand Totals
+     57330       4772      20190       2908       9816     909259   ELF Image Totals (compressed)
+     57330       4772      20190       2908          0          0   ROM Totals
 
 ==============================================================================
 
     Total RO  Size (Code + RO Data)                77520 (  75.70kB)
-    Total RW  Size (RW Data + ZI Data)             20888 (  20.40kB)
-    Total ROM Size (Code + RO Data + RW Data)      80420 (  78.54kB)
+    Total RW  Size (RW Data + ZI Data)             20912 (  20.42kB)
+    Total ROM Size (Code + RO Data + RW Data)      80428 (  78.54kB)
 
 ==============================================================================
 

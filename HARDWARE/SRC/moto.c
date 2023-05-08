@@ -30,8 +30,8 @@ u8 tim7_start=0;		//pid调节标志位
 // u8 velocity_PID_KD_qh[5] = {0,55,69,75,118};
 
 
-u8 velocity_PID_KP_qh[5] = {0,35,38,39,71};
-u8 velocity_PID_KD_qh[5] = {0,35,49,55,98};
+u8 velocity_PID_KP_qh[5] = {0,35,43,49,71};
+u8 velocity_PID_KD_qh[5] = {0,35,54,65,98};
 
 
 
@@ -57,7 +57,7 @@ int bl_PWM = 0;
 int br_PWM = 0;
 
 int speed=0;
-u8 speed_carrage[10]={0,25,55,80,18,18,28};
+u8 speed_carrage[10]={0,25,35,50,18,18,28};
 
 int16_t a_pwm[6];
 
@@ -557,7 +557,7 @@ void PWM_SET(void)      //开启定时器7并且进行一些PID参数设置
 	
 	tim7_start = 1;
 	
-	TIM7_BaseTime_Init(1250,720-1);		//100 	
+	TIM7_BaseTime_Init(1500,720-1);		//100 	
 //	fzopen();                         //防撞打开
 }
 
@@ -581,7 +581,7 @@ void DJ_MOVE(u8 t,u8 f,u8 sp,u8 dj_1,u8 dj_2,u8 dj_3,u8 dj_4,u8 YS)
 			;
 		}	
 		if(f==1)
-			delay_ms(9);
+			delay_ms(10);
 		else
 			delay_ms(50);
 	
@@ -798,7 +798,7 @@ speed=5;
 
 		FX = 2;
 		PWM_SET();		
-		while ((angle_cs - angle_6 >= 3 || angle_cs - angle_6 <= -3)||((int16)(last_angle -angle_6)%360 > 8||(int16)(last_angle -angle_6)%360 <- 8)) // 当前值与目标值作差，差小于某个值则认为转好了
+		while ((angle_cs - angle_6 >= 4 || angle_cs - angle_6 <= -4)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10)) // 当前值与目标值作差，差小于某个值则认为转好了
 		{		
 			// 	sprintf(OLED_BUF,"%.0f 	%5.0f",angle1,angle_6);//显示
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
@@ -825,7 +825,7 @@ speed=5;
 
 		FX = 3;
 		PWM_SET();	
-		while ((angle_cs - angle_6 >= 3 || angle_cs - angle_6 <= -3)||((int16)(last_angle -angle_6)%360 > 8||(int16)(last_angle -angle_6)%360 <- 8))
+		while ((angle_cs - angle_6 >= 4 || angle_cs - angle_6 <= -4)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10))
 			{			
 			// 	sprintf(OLED_BUF,"%.0f 	%5.0f",angle1,angle_6);//显示
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
@@ -854,7 +854,7 @@ speed=5;
 
 		FX = 3;
 		PWM_SET();	
-		while ((angle_cs - angle_6 >= 3 || angle_cs - angle_6 <= -3)||((int16)(last_angle -angle_6)%360 > 8||(int16)(last_angle -angle_6)%360 <- 8))
+		while ((angle_cs - angle_6 >= 4 || angle_cs - angle_6 <= -4)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10))
 			{			
 			// 	sprintf(OLED_BUF,"%.0f 	%5.0f",angle1,angle_6);//显示
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
@@ -881,7 +881,7 @@ speed=5;
 
 		FX = 2;
 		PWM_SET();		
-		while ((angle_cs - angle_6 >= 3 || angle_cs - angle_6 <= -3)||((int16)(last_angle -angle_6)%360 > 8||(int16)(last_angle -angle_6)%360 <- 8)) // 当前值与目标值作差，差小于某个值则认为转好了
+		while ((angle_cs - angle_6 >= 4 || angle_cs - angle_6 <= -4)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10)) // 当前值与目标值作差，差小于某个值则认为转好了
 		{		
 			// 	sprintf(OLED_BUF,"%.0f 	%5.0f",angle1,angle_6);//显示
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
@@ -908,7 +908,7 @@ speed=5;
 
 		FX = 3;
 		PWM_SET();	
-		while ((angle_cs - angle_6 >= 3 || angle_cs - angle_6 <= -3)||((int16)(last_angle -angle_6)%360 > 8||(int16)(last_angle -angle_6)%360 <- 8))
+		while ((angle_cs - angle_6 >= 4 || angle_cs - angle_6 <= -4)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10))
 			{			
 			// 	sprintf(OLED_BUF,"%.0f 	%5.0f",angle1,angle_6);//显示
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
@@ -926,7 +926,7 @@ speed=5;
 
 void DJ_MOVE_YS(u8 t,u8 f,u8 sp,u16 tim)	//延时停车
 {
-	speed=sp;
+	speed=4;
 	FX = f;
 	PWM_SET();		
 	if(t > 1)
@@ -936,7 +936,7 @@ void DJ_MOVE_YS(u8 t,u8 f,u8 sp,u16 tim)	//延时停车
 			;
 		}
 	}	
-	speed=sp;
+	speed=4;
 	pwm_time = 0;	
 	while(pwm_time<tim)			//速度1，一格67
 	{		
@@ -949,7 +949,7 @@ void DJ_MOVE_YS(u8 t,u8 f,u8 sp,u16 tim)	//延时停车
 void DJ_MOVE_YS_XC(u8 t,u8 f,u8 sp,u16 tim)	//延时下车停车
 {
 	int i;
-	speed=1;
+	speed=4;
 	FX = f;
 	PWM_SET();		
 //	if(t > 1)
@@ -959,7 +959,7 @@ void DJ_MOVE_YS_XC(u8 t,u8 f,u8 sp,u16 tim)	//延时下车停车
 //			;
 //		}
 //	}	
-	speed=1;
+	speed=4;
 	pwm_time = 0;	
 //	while(i<tim)			//速度1，一格67
 //	{		
