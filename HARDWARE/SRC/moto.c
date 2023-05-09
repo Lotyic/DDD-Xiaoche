@@ -58,7 +58,7 @@ int bl_PWM = 0;
 int br_PWM = 0;
 
 int speed=0;
-u8 speed_carrage[10]={0,25,35,45,20};
+u8 speed_carrage[10]={0,25,35,45,20,18};
 
 int16_t a_pwm[6];
 
