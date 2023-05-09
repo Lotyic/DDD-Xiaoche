@@ -30,10 +30,11 @@ u8 tim7_start=0;		//pid调节标志位
 // u8 velocity_PID_KD_qh[5] = {0,55,69,75,118};
 
 
-u8 velocity_PID_KP_qh[5] = {0,35,43,49,71};
-u8 velocity_PID_KD_qh[5] = {0,35,54,65,98};
+// u8 velocity_PID_KP_qh[5] = {0,35,43,49,71};
+// u8 velocity_PID_KD_qh[5] = {0,35,54,65,98};
 
-
+u8 velocity_PID_KP_qh[5] = {0,65,73,79,55};
+u8 velocity_PID_KD_qh[5] = {0,65,84,95,55};
 
 
 /*----------------------------计数部分--------------------------*/
@@ -57,7 +58,7 @@ int bl_PWM = 0;
 int br_PWM = 0;
 
 int speed=0;
-u8 speed_carrage[10]={0,25,35,50,18,18,28};
+u8 speed_carrage[10]={0,25,35,45,20};
 
 int16_t a_pwm[6];
 
@@ -784,7 +785,7 @@ speed=5;
 	{
 
 		float last_angle=0;
-		USART_Cmd(USART1, ENABLE);					   // 使能串口1
+		// USART_Cmd(USART1, ENABLE);					   // 使能串口1
 		angle_6 = 0;					   
 		while (angle_6 == 0)						   // 等待数据
 			;
@@ -798,20 +799,20 @@ speed=5;
 
 		FX = 2;
 		PWM_SET();		
-		while ((angle_cs - angle_6 >= 4 || angle_cs - angle_6 <= -4)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10)) // 当前值与目标值作差，差小于某个值则认为转好了
+		while ((angle_cs - angle_6 >= 3 || angle_cs - angle_6 <= -3)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10)) // 当前值与目标值作差，差小于某个值则认为转好了
 		{		
 			// 	sprintf(OLED_BUF,"%.0f 	%5.0f",angle1,angle_6);//显示
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
 			last_angle = angle_6;
 		};
-		USART_Cmd(USART1, DISABLE);					   // 使能串口1
+		// USART_Cmd(USART1, DISABLE);					   // 使能串口1
 		sum_flag = 0;				
 		angle_6 = 0;
 	}
 	if(r == 4)
 	{
 		float last_angle=0;			
-		USART_Cmd(USART1, ENABLE);					   // 使能串口1
+		// USART_Cmd(USART1, ENABLE);					   // 使能串口1
 		angle_6 = 0;
 		while (angle_6 == 0)						   // 等待数据
 			;
@@ -825,13 +826,13 @@ speed=5;
 
 		FX = 3;
 		PWM_SET();	
-		while ((angle_cs - angle_6 >= 4 || angle_cs - angle_6 <= -4)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10))
+		while ((angle_cs - angle_6 >= 3 || angle_cs - angle_6 <= -3)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10))
 			{			
 			// 	sprintf(OLED_BUF,"%.0f 	%5.0f",angle1,angle_6);//显示
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
 				last_angle = angle_6;
 			};
-		USART_Cmd(USART1, DISABLE);					   // 使能串口1
+		// USART_Cmd(USART1, DISABLE);					   // 使能串口1
 		sum_flag = 0;				
 		angle_6 = 0;
 	}
@@ -854,7 +855,7 @@ speed=5;
 
 		FX = 3;
 		PWM_SET();	
-		while ((angle_cs - angle_6 >= 4 || angle_cs - angle_6 <= -4)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10))
+		while ((angle_cs - angle_6 >= 3 || angle_cs - angle_6 <= -3)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10))
 			{			
 			// 	sprintf(OLED_BUF,"%.0f 	%5.0f",angle1,angle_6);//显示
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
@@ -867,7 +868,7 @@ speed=5;
 		if(r == 6)   //左转45度
 	{
 		float last_angle=0;
-		USART_Cmd(USART1, ENABLE);					   // 使能串口1
+		// USART_Cmd(USART1, ENABLE);					   // 使能串口1
 		angle_6 = 0;					   // 使能串口1
 		while (angle_6 == 0)						   // 等待数据
 			;
@@ -881,13 +882,13 @@ speed=5;
 
 		FX = 2;
 		PWM_SET();		
-		while ((angle_cs - angle_6 >= 4 || angle_cs - angle_6 <= -4)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10)) // 当前值与目标值作差，差小于某个值则认为转好了
+		while ((angle_cs - angle_6 >= 3 || angle_cs - angle_6 <= -3)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10)) // 当前值与目标值作差，差小于某个值则认为转好了
 		{		
 			// 	sprintf(OLED_BUF,"%.0f 	%5.0f",angle1,angle_6);//显示
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
 			last_angle = angle_6;
 		};
-		USART_Cmd(USART1, DISABLE);					   // 使能串口1
+		// USART_Cmd(USART1, DISABLE);					   // 使能串口1
 		sum_flag = 0;				
 		angle_6 = 0;
 	}
@@ -908,7 +909,7 @@ speed=5;
 
 		FX = 3;
 		PWM_SET();	
-		while ((angle_cs - angle_6 >= 4 || angle_cs - angle_6 <= -4)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10))
+		while ((angle_cs - angle_6 >= 3 || angle_cs - angle_6 <= -3)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10))
 			{			
 			// 	sprintf(OLED_BUF,"%.0f 	%5.0f",angle1,angle_6);//显示
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
