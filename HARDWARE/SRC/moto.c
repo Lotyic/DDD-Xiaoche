@@ -390,7 +390,7 @@ void TIM7_IRQHandler(void)      //调整轮子PID、PWM定时器7中断函数
 
 				
 			}
-			else if(FX == 0)		//后退
+			else if(FX == 0||FX==9)		//后退
 			{
 				Pid_fl.set=-speed_carrage[speed]; 
 				Pid_bl.set=-speed_carrage[speed];
@@ -584,7 +584,7 @@ void DJ_MOVE(u8 t,u8 f,u8 sp,u8 dj_1,u8 dj_2,u8 dj_3,u8 dj_4,u8 YS)
 		if(f==1)
 			delay_ms(10);
 		else
-			delay_ms(50);
+			delay_ms(350);
 	
 		stop();	
 	}	
@@ -605,7 +605,7 @@ void DJ_MOVE(u8 t,u8 f,u8 sp,u8 dj_1,u8 dj_2,u8 dj_3,u8 dj_4,u8 YS)
 		if(f==1)
 			delay_ms(10);
 		else
-			delay_ms(50);
+			delay_ms(350);
 		stop();
 	}
 	else if(t >= 3)          //当需要走三格及以上时
@@ -631,7 +631,7 @@ void DJ_MOVE(u8 t,u8 f,u8 sp,u8 dj_1,u8 dj_2,u8 dj_3,u8 dj_4,u8 YS)
 		if(f==1)
 			delay_ms(1);
 		else
-			delay_ms(50);
+			delay_ms(350);
 		stop();
 	}
 }
@@ -664,7 +664,7 @@ u8 BMQ_MOVE(u8 f,u16 d,u8 mod)        //编码器行走函数
 		stop();
 	}
 	
-	if(f==0)//后退
+	if(f==0||f==9)//后退
 	{
 		FX=0;
 		PWM_SET();
@@ -779,13 +779,12 @@ void DJ_MOVE_ZHUAN(u8 r,u8 f)		//r3左转4右转,f1前进0后退
 //	}	
 
 	/*六轴转弯*/
-//	
+
 speed=5;
 	if(r == 3)
 	{
 
 		float last_angle=0;
-		// USART_Cmd(USART1, ENABLE);					   // 使能串口1
 		angle_6 = 0;					   
 		while (angle_6 == 0)						   // 等待数据
 			;
@@ -805,14 +804,12 @@ speed=5;
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
 			last_angle = angle_6;
 		};
-		// USART_Cmd(USART1, DISABLE);					   // 使能串口1
 		sum_flag = 0;				
 		angle_6 = 0;
 	}
 	if(r == 4)
 	{
 		float last_angle=0;			
-		// USART_Cmd(USART1, ENABLE);					   // 使能串口1
 		angle_6 = 0;
 		while (angle_6 == 0)						   // 等待数据
 			;
@@ -832,7 +829,6 @@ speed=5;
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
 				last_angle = angle_6;
 			};
-		// USART_Cmd(USART1, DISABLE);					   // 使能串口1
 		sum_flag = 0;				
 		angle_6 = 0;
 	}
@@ -868,7 +864,6 @@ speed=5;
 		if(r == 6)   //左转45度
 	{
 		float last_angle=0;
-		// USART_Cmd(USART1, ENABLE);					   // 使能串口1
 		angle_6 = 0;					   // 使能串口1
 		while (angle_6 == 0)						   // 等待数据
 			;
@@ -876,26 +871,24 @@ speed=5;
 		while (angle_6 == 0)						   // 等待数据
 			;
 
-		angle_cs+=45; 
+		angle_cs+=43; 
 		if(angle_cs>=360)
 		angle_cs-=360;
 
 		FX = 2;
 		PWM_SET();		
-		while ((angle_cs - angle_6 >= 3 || angle_cs - angle_6 <= -3)||((int16)(last_angle -angle_6)%360 > 10||(int16)(last_angle -angle_6)%360 <- 10)) // 当前值与目标值作差，差小于某个值则认为转好了
+		while ((angle_cs - angle_6 >= 3 || angle_cs - angle_6 <= -3)||((int16)(last_angle -angle_6)%360 > 8||(int16)(last_angle -angle_6)%360 <- 8)) // 当前值与目标值作差，差小于某个值则认为转好了
 		{		
 			// 	sprintf(OLED_BUF,"%.0f 	%5.0f",angle1,angle_6);//显示
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
 			last_angle = angle_6;
 		};
-		// USART_Cmd(USART1, DISABLE);					   // 使能串口1
 		sum_flag = 0;				
 		angle_6 = 0;
 	}
 		if(r == 7)		//右转45度
 	{
 		float last_angle=0;			
-		USART_Cmd(USART1, ENABLE);					   // 使能串口1
 		angle_6 = 0;
 		while (angle_6 == 0)						   // 等待数据
 			;
@@ -915,7 +908,6 @@ speed=5;
 			// LCD_16_HanZi_ASCII(0,6,OLED_BUF);	
 				last_angle = angle_6;
 			};
-		USART_Cmd(USART1, DISABLE);					   // 使能串口1
 		sum_flag = 0;				
 		angle_6 = 0;
 	}
