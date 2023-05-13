@@ -58,7 +58,7 @@ int bl_PWM = 0;
 int br_PWM = 0;
 
 int speed=0;
-u8 speed_carrage[10]={0,25,35,45,20,18};
+u8 speed_carrage[10]={0,25,35,60,20,18};
 
 int16_t a_pwm[6];
 
@@ -610,15 +610,15 @@ void DJ_MOVE(u8 t,u8 f,u8 sp,u8 dj_1,u8 dj_2,u8 dj_3,u8 dj_4,u8 YS)
 	}
 	else if(t >= 3)          //当需要走三格及以上时
 	{
-		speed = 3;	
+		speed = 1;	
 		PWM_SET();
-		while(tt < 1 && stop_TIM)	//第一格用2档速度
+		while(tt < 1 && stop_TIM)	//第一格用1档速度
 		{		
 			;
 		}
 		
-		speed = 2;		
-		while(t-1 > tt && stop_TIM)	//中间用设定速度
+		speed = 3;		
+		while(t-1 > tt && stop_TIM)	//中间用3速度
 		{
 			;
 		}
@@ -629,7 +629,7 @@ void DJ_MOVE(u8 t,u8 f,u8 sp,u8 dj_1,u8 dj_2,u8 dj_3,u8 dj_4,u8 YS)
 			;
 		}
 		if(f==1)
-			delay_ms(1);
+			delay_ms(10);
 		else
 			delay_ms(350);
 		stop();
